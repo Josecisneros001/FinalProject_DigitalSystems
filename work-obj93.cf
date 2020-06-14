@@ -1,0 +1,10 @@
+v 4
+file . "i2c_tb.vhdl" "ca126002c73e438c90f2eef0e8b7f44fc7d7cc97" "20200614043749.816":
+  entity i2c_tb at 1( 0) + 0 on 53;
+  architecture arch of i2c_tb at 12( 166) + 0 on 54;
+file . "i2cReceiver.vhdl" "1aa04d2b740da2fe0eeed621d7df98bdd9c88fc8" "20200614043749.683":
+  entity i2creceiver at 1( 0) + 0 on 49;
+  architecture arch of i2creceiver at 8( 106) + 0 on 50;
+file . "i2cTransceiver.vhdl" "7259d12c6b4adb74f2c2a4481377e5d45821e170" "20200614043749.744":
+  entity i2ctransceiver at 1( 0) + 0 on 51;
+  architecture arch of i2ctransceiver at 9( 139) + 0 on 52;
