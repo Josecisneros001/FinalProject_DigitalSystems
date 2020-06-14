@@ -9,11 +9,11 @@
 
 ## Code 
 ### i2cReceiver 
-#### [i2cReceiver](i2cReceiver.vhdl)
+ [i2cReceiver](i2cReceiver.vhdl)
 ### i2cTransceiver
-#### [i2cTransceiver](i2cTransceiver.vhdl)
+ [i2cTransceiver](i2cTransceiver.vhdl)
 ### i2c_tb
-#### [i2c_tb](i2c_tb.vhdl)
+ [i2c_tb](i2c_tb.vhdl)
 
 ## Run Code
-#### [bash i2c_run.sh](i2c_run.sh)
+ [bash i2c_run.sh](i2c_run.sh)
