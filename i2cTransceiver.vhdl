@@ -21,10 +21,12 @@ architecture arch of i2cTransceiver is
     constant frame10bitDefault : std_logic_vector(0 to 4) := "11110";
     signal frame10bitA : std_logic_vector(0 to 8);
     signal frame7bitA : std_logic_vector(0 to 8);
+    signal frame7bitB : std_logic_vector(0 to 8);
     signal frameData : std_logic_vector(0 to 8);
   begin
     frame10bitA <= frame10bitDefault & addr(9 downto 8) & r_w & ack;
     frame7bitA <=  addr(6 downto 0) & r_w & ack;
+    frame7bitB <=  addr(7 downto 0) & ack;
     frameData <=  data(7 downto 0) & ack;
     process
       begin
@@ -57,8 +59,12 @@ architecture arch of i2cTransceiver is
         end if;
 
         for i in 0 to 8 loop
-          sda <= frame7bitA(i);
-          
+          if addr(9 downto 7) /= "000" then
+            sda <= frame7bitB(i);
+          else
+            sda <= frame7bitA(i);
+          end if;
+
           wait for (bit_period/2);
           scl <= '1';   
           wait for (bit_period/2);
