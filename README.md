@@ -17,3 +17,9 @@
 
 ## Run Code
  [bash i2cTR_run.sh](i2cTR_run.sh)
+ 
+ ## Documentation
+ ### Written Report
+ [PDF](https://bit.ly/2UKZcCr)
+ ### Explanatory Video
+ [Video](https://bit.ly/2URgptV.)
