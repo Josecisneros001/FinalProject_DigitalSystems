@@ -28,8 +28,11 @@
 ### RUN i2c 1 Master 2 Slaves
  [bash i2c_run.sh](i2c_run.sh)
  
- ## Documentation
- ### Written Report
- [PDF](https://bit.ly/2UKZcCr)
- ### Explanatory Video
- [Video](https://bit.ly/2URgptV.)
+## Simulation
+  ![Signals](Signals.png)
+
+## Documentation
+### Written Report
+  [PDF](https://bit.ly/2YFTAdQ)
+### Explanatory Video
+  [Video](https://bit.ly/2URgptV.)
